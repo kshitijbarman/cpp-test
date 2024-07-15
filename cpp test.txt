@@ -1,0 +1,220 @@
+  1. Write a program to calculate the factorial of a given positive integer using a for loop.
+
+    #include <bits/stdc++.h>
+    using namespace std;
+    int main()
+  {
+    int num,fact=1;
+    cout<<"Enter the no: ";
+    cin>>num;
+    
+    for(int i=1 ;i<=num ;i++)
+    {
+        fact=fact*i;
+    }
+    cout<<"Factorial of "<< num <<" is "<<fact;
+
+    return 0;
+}
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+   
+  2.  Write a program to check if a given three-digit number is an Armstrong number using a while loop.
+   
+     #include <bits/stdc++.h>
+     using namespace std;
+    int main()
+  {         
+    int r,num,arm=0;
+    int n;
+    cout<<"Enter the no: ";
+    cin>>num;
+    
+    n=num;
+    while(num>0){
+    r=num%10;
+    num=num/10;
+    arm=arm+r*r*r;
+}
+    if(arm==n){
+     cout<<" armstrong no:";
+    }
+    else {
+     cout<<" not a armstrong no:";
+    }
+    return 0;
+}
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+  3.  Write a program to check if a given string is a palindrome using a for loop.
+
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+  4.    Write a program to count the number of digits in a given integer using a while loop.
+   
+  #include <bits/stdc++.h>
+using namespace std;
+int main()
+{  int num,n,count=0;
+    cout<<"Enter the no: ";
+    cin>>num;
+    n=num;
+    
+    if(num==0){
+        cout<<"Enter number greater than 0";
+    }
+    while(num>0){
+        num=num/10;
+        count++;
+    }
+    cout<<"number of digits is "<<count;
+    return 0;
+}
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+  5.  Write a program that checks if a given number is even or odd using an if-else statement.
+
+     #include <bits/stdc++.h>
+     using namespace std;
+     int main()
+  {
+    int num;
+    cout<<"Enter the no: ";
+    cin>>num;
+    if(num%2==0)
+    {
+        cout<<"Even no:";
+    }
+    else{
+        cout<<"odd no:";
+    }
+    return 0;
+}
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+   
+    6.  Write a program that determines whether a given number is positive, negative, or zero using an if-else statement.
+         
+     #include <bits/stdc++.h>
+     using namespace std;
+     int main()
+  {
+    int num;
+    cout<<"Enter the no: ";
+    cin>>num;
+    if(num>0)
+    {
+        cout<<"Possitive no:";
+    }
+    else if(num==0){
+        cout<<"0";
+    }
+    else{
+         cout<<"Negative no:";
+    }
+    return 0; 
+}
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+     7. Write a program that assigns a grade based on a given percentage:90-100: A
+        80-89: B
+        70-79: C
+        60-69: D
+        Below 60: F
+     
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{  int perc;
+    cout<<"Enter the percentage: ";
+    cin>>perc;
+    
+    if(perc >=90 && perc <=100){
+    cout << "The grade is: A";
+    }
+    else if (perc >= 80 && perc <= 89) {
+    cout << "The grade is: B";
+    }
+     else if (perc >= 70 && perc <= 79) {
+    cout << "The grade is: C";
+     }
+     else if (perc >= 60 && perc <= 69) {
+    cout << "The grade is: D";
+     }
+     else{
+          cout << "The grade is: F";
+     }
+     
+    return 0;
+}
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+     8. Write a program to calculate the sum and average of marks for 5 subjects using arithmetic operators
+
+  #include <bits/stdc++.h>
+using namespace std;
+int main()
+{   
+    int s1,s2,s3,s4,s5,s6;
+    float sum,avg;
+    cout<<"Enter the marks: ";
+    cin>>s1>>s2>>s3>>s4>>s5;
+    
+    sum=s1+s2+s3+s4+s5;
+    avg=sum/5;
+    cout<<" sum of marks = "<<sum<<endl;
+    cout<<" average of marks ="<<avg;
+    
+
+    return 0;
+}
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    9. Write a program to calculate simple interest given the principal amount, rate of interest, and time using arithmetic operators.
+    
+  #include <bits/stdc++.h>
+using namespace std;
+int main()
+{   float pri_amou,rate,timee,simple_interest;
+     
+    
+    cout<<"Enter the amount: ";
+    cin>>pri_amou;
+    cout<<"Enter the interest rate: ";
+    cin>>rate;
+    cout<<"Enter the time (in year): ";
+    cin>> timee;
+    
+    simple_interest=(pri_amou*rate*timee)/100;
+    cout<<"simple interest is "<< simple_interest;
+
+    return 0;
+}
+
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+   
+    10. Write a program to convert temperature from Celsius to Fahrenheit and vice versa using arithmetic operators.
+    
+   #include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char ch;
+    int temp;
+    float fahrenheit,celius;
+    cout<<"Enter c for celius or f fahrenheit: ";
+    cin>>ch;
+    if(ch=='c')
+    {
+        cout<<"Enter the temp in celius: ";
+        cin>>temp;
+       fahrenheit=(temp*(9.0/5.0)) + 32;
+       cout<<fahrenheit;
+    }
+    else if(ch=='f'){
+        cout<<"Enter the temp in fahrenheit: ";
+        cin>>temp;
+       celius=(temp - 32) * 5.0/9.0;
+       cout<<celius;
+    }
+   
+    return 0; 
+}
